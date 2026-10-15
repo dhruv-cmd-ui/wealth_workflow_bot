@@ -1,0 +1,61 @@
+name: Post to Telegram
+
+on:
+  schedule:
+    # 03:00 UTC = 08:30 IST -> morning slot
+    - cron: "0 3 * * *"
+    # 13:30 UTC = 19:00 IST -> evening slot
+    - cron: "30 13 * * *"
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Which slot to run"
+        required: false
+        default: "morning"
+        type: choice
+        options:
+          - morning
+          - evening
+
+permissions:
+  contents: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Determine slot
+        id: slot
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "slot=${{ github.event.inputs.slot }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 3 * * *" ]; then
+            echo "slot=morning" >> "$GITHUB_OUTPUT"
+          else
+            echo "slot=evening" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generate and post content
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+        run: python src/main.py --slot ${{ steps.slot.outputs.slot }}
+
+      - name: Commit updated rotation state
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/rotation_state.json
+          git diff --staged --quiet || git commit -m "Update content rotation state [skip ci]"
+          git push

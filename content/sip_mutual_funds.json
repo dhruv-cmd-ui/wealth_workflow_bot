@@ -1,0 +1,22 @@
+[
+  {"tip": "A SIP doesn't need a 'perfect' market entry point by design — that's the entire reason it exists. Trying to also time when you start your SIP defeats its purpose."},
+  {"tip": "Comparing a fund's 1-year return against a 10-year return tells you more about recent market conditions than about the fund's actual skill — always check returns across multiple timeframes."},
+  {"tip": "A flexi-cap fund can invest across large, mid, and small-cap stocks freely, giving the fund manager more flexibility — and more responsibility for getting the allocation right — than a fund locked into one market-cap category."},
+  {"tip": "Two funds in the same category can have very different risk levels depending on how concentrated their top 10 holdings are — check portfolio concentration, not just the category label."},
+  {"tip": "A fund's 'AUM' (Assets Under Management) size can affect strategy flexibility — a very large small-cap fund, for instance, may struggle to deploy new money into genuinely small, less liquid stocks."},
+  {"tip": "Step-up SIPs let you automatically increase your monthly SIP amount by a fixed percentage every year, matching rising income without needing a manual decision each time."},
+  {"tip": "A multi-cap fund is required to maintain minimum allocations across large, mid, and small-cap stocks by regulation, while a flexi-cap fund has no such mandated minimums — read the mandate, not just the name."},
+  {"tip": "If you hold 5 'different' large-cap funds, check their portfolios — large-cap funds often hold many of the same top stocks, meaning your 'diversification' may be smaller than it looks on paper."},
+  {"tip": "A fund's benchmark matters: a mid-cap fund should be judged against a mid-cap index, not against the Nifty 50 — comparing against the wrong benchmark can make a fund look better or worse than it really is."},
+  {"tip": "SIP in index funds removes manager selection risk entirely — you're not betting on whether a specific fund manager will outperform, only on the broader market's long-term growth."},
+  {"tip": "Hybrid/balanced advantage funds automatically shift the equity-debt mix based on market valuation signals, aiming to reduce the emotional burden of manual rebalancing — useful for investors who don't want to actively manage allocation."},
+  {"tip": "A sudden change in a fund's manager is worth noting — historical performance was generated under the old manager's decisions, and a new manager may run the fund differently going forward."},
+  {"tip": "SIP 'pause' facilities let you skip a few months without formally stopping the mandate — useful during temporary cash flow stress, without losing your SIP registration and having to restart from scratch."},
+  {"tip": "A thematic fund (e.g., 'infrastructure,' 'manufacturing') concentrates risk in one theme — it can outperform sharply when that theme is in favor, and underperform sharply when it isn't. Size the allocation accordingly."},
+  {"tip": "Fund factsheets publish the portfolio turnover ratio — a high turnover ratio often means more frequent buying/selling, which can mean higher transaction costs and potentially higher short-term tax impact within the fund."},
+  {"tip": "An international/global fund adds genuine geographic diversification beyond the Indian market, but also adds currency risk — rupee depreciation can boost returns, and rupee appreciation can dampen them, independent of the underlying market's performance."},
+  {"tip": "Target maturity debt funds hold bonds until a specific maturity date, giving relatively predictable, bond-like returns if held to that date — useful for goal-based debt allocation with a known time horizon."},
+  {"tip": "A fund's 'standard deviation' and 'Sharpe ratio,' both published in factsheets, give a quick sense of how volatile a fund has been and how well it has been compensated for that volatility — worth checking alongside raw returns."},
+  {"tip": "Switching funds frequently chasing recent outperformance (called 'return chasing') is one of the most studied, most common ways retail investors underperform the very funds they invest in."},
+  {"tip": "A SIP's XIRR (not simple average return) is the correct way to measure your actual annualized return, since it accounts for the different dates and amounts of each individual instalment."}
+]
