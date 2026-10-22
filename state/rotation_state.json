@@ -1,7 +1,7 @@
 {
   "_slot_cursor": {
     "morning": 2,
-    "evening": 6
+    "evening": 1
   },
   "terms": {
     "order": [
@@ -110,7 +110,7 @@
       42,
       40
     ],
-    "cursor": 1
+    "cursor": 2
   },
   "did_you_know": {
     "order": [
