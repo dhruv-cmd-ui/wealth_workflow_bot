@@ -1,6 +1,6 @@
 {
   "_slot_cursor": {
-    "morning": 2,
+    "morning": 3,
     "evening": 4
   },
   "terms": {
@@ -140,7 +140,7 @@
       12,
       9
     ],
-    "cursor": 3
+    "cursor": 4
   },
   "myths": {
     "order": [
